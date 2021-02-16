@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">SD6501_Assignment1_2173138</string>
+
+    <string name="open_navigation_drawer">Open navigation drawer</string>
+    <string name="close_navigation_drawer">Close navigation drawer</string>
+</resources>

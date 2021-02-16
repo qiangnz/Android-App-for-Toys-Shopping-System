@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sd6501_final_project_2173138.ReadMeActivity"
+    android:background="@color/backGround">
+
+    <TextView
+        android:id="@+id/Readme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="Toys Online Ordering System \n for  Android Version 3"
+        android:textColor="@color/titleColour"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/readInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Readme"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Toys Online Ordering System is an free and\n open source application built with android\n studio, it will be
+a very handy tool for small\n toys store after the development is\n completed. There is no commercial version in\n the future,
+any question please contact us qiang.zhang001@studnet.weltec.co.nz\nThank you!"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/titleColour"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/readInfo"
+        android:layout_marginTop="30dp"
+        android:text="Features:\nUsers Login and Register
+        \nToys Selections\nInsert Customer Name\nInsert Shipping Address\nAdd new Order\nDelete Orders\nUpdate Orders
+\nView Orders"
+        android:textSize="18dp"
+
+        android:textColor="@color/titleColour"
+        />
+</RelativeLayout>

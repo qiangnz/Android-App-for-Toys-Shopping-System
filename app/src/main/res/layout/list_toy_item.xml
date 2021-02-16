@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@color/backGround">
+
+    <ImageView
+        android:id="@+id/toyImage"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/lego" />
+
+    <TextView
+        android:id="@+id/toyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/toyImage"
+        android:text="LEGO"
+        android:textColor="@color/textColour"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/toyPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toyName"
+        android:layout_toRightOf="@+id/toyImage"
+        android:text="$25.00"
+        android:textColor="@color/textColour"
+        android:textSize="20dp" />
+
+    <ImageButton
+        android:id="@+id/removeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/addBtn"
+        android:src="@drawable/ic_baseline_chevron_left_24_blue" />
+
+    <ImageButton
+        android:id="@+id/addBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="24dp"
+        android:layout_toLeftOf="@+id/toyNum"
+        android:src="@drawable/ic_baseline_chevron_right_24_blue" />
+
+
+    <TextView
+        android:id="@+id/toyNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="12dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="32dp"
+        android:text="0"
+        android:textColor="@color/textColour"
+        android:textSize="25dp" />
+
+</RelativeLayout>
+

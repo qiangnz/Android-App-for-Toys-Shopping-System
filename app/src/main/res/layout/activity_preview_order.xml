@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    tools:context=".ui.PreviewOrderActivity"
+    android:background="@color/backGround">
+
+    <TextView
+    android:id="@+id/order_info_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    android:text="Selected Toys:"
+    android:textColor="@color/txtColor_black"
+    android:textStyle="bold"
+    android:textSize="24dp" />
+
+    <TextView
+        android:id="@+id/order_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/order_info_text"
+        android:text="Order Info"
+        android:textColor="@color/txtColor_black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/order_user_info_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/order_info"
+        android:text="Shipping Information:"
+        android:textStyle="bold"
+        android:textColor="@color/txtColor_black"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/order_user_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/order_user_info_text"
+        android:text="Order Userinfo"
+
+        android:textColor="@color/txtColor_black"
+        android:textSize="18sp" />
+
+
+
+
+    <Button
+        android:id="@+id/btnEditOrderUserInfo"
+        style="@style/btnStyle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_above="@+id/btnDeleteOrder"
+        android:padding="8dp"
+        android:text="Edit Shipping Information" />
+
+
+    <Button
+        android:id="@+id/btnDeleteOrder"
+        style="@style/btnStyle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_above="@+id/btnConfirmOrder"
+        android:layout_marginTop="12dp"
+        android:padding="8dp"
+        android:text="Delete Order" />
+
+    <Button
+        android:id="@+id/btnConfirmOrder"
+        style="@style/btnStyle"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="12dp"
+        android:padding="8dp"
+        android:text="Confirm Order" />
+
+</RelativeLayout>

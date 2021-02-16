@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:background="@color/backGround"
+    tools:context=".Login.LoginActivity">
+
+        <TextView
+            android:id="@+id/logininfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please Login"
+            android:textColor="@color/txtColor_black"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"/>
+
+        <TextView
+            android:id="@+id/loginEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logininfo"
+            android:layout_marginTop="50dp"
+            android:text="Email Address: "
+            android:textStyle="bold"
+            android:textColor="@color/txtColor_black"
+            android:textSize="22dp"/>
+
+        <!-- input username -->
+        <EditText
+            android:id="@+id/etUsername"
+            style="@style/editTextStyle"
+            android:layout_below="@+id/loginEmail"
+            android:layout_marginTop="5dp"
+            android:hint="Email address"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:id="@+id/passwordinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etUsername"
+            android:layout_marginTop="20dp"
+            android:text="Psssword: "
+            android:textStyle="bold"
+            android:textColor="@color/txtColor_black"
+            android:textSize="22dp"/>
+
+        <!-- input pwd -->
+        <EditText
+            android:id="@+id/etPassword"
+            style="@style/editTextStyle"
+            android:layout_below="@+id/passwordinfo"
+            android:layout_marginTop="5dp"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+
+        <!-- login button -->
+        <Button
+            android:id="@+id/btnLogin"
+            style="@style/btnStyle"
+            android:layout_below="@+id/etPassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="Login" />
+
+        <!-- signUp button -->
+        <Button
+            android:id="@+id/btnSignUp"
+            style="@style/btnStyle"
+            android:layout_below="@+id/btnLogin"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:text="Register" />
+
+        <TextView
+            android:id="@+id/tvInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/btnSignUp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            />
+
+</RelativeLayout>

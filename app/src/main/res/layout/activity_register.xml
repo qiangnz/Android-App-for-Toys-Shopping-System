@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backGround"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+    <TextView
+        android:id="@+id/reginfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please Register"
+        android:textColor="@color/txtColor_black"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"/>
+
+    <TextView
+        android:id="@+id/regEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reginfo"
+        android:layout_marginTop="30dp"
+        android:text="Email Address: "
+        android:textStyle="bold"
+        android:textColor="@color/txtColor_black"
+        android:textSize="22dp"/>
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_below="@+id/regEmail"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="5dp"
+        android:hint="Email address"
+        android:inputType="textEmailAddress"
+        android:maxLength="50"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/regpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etUsername"
+        android:layout_marginTop="15dp"
+        android:text="Password: "
+        android:textStyle="bold"
+        android:textColor="@color/txtColor_black"
+        android:textSize="22dp"/>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/regpass"
+        android:layout_marginTop="5dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:maxLength="20"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/regrppass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etPassword"
+        android:layout_marginTop="15dp"
+        android:text="Confirm Password: "
+        android:textStyle="bold"
+        android:textColor="@color/txtColor_black"
+        android:textSize="22dp"/>
+
+
+    <EditText
+        android:id="@+id/etRpPassword"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/regrppass"
+        android:layout_marginTop="5dp"
+        android:hint="Confirm password"
+        android:inputType="textPassword"
+        android:maxLength="20"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="20sp" />
+
+
+    <Button
+        android:id="@+id/btnCreateAccount"
+        style="@style/btnStyle"
+        android:layout_below="@+id/etRpPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:text="Create Account"
+        android:textSize="20dp" />
+
+
+    <TextView
+        android:id="@+id/alreadySignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnCreateAccount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Already have an account?"
+        android:textColor="#999999"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        style="@style/btnStyle"
+
+        android:layout_below="@+id/alreadySignUp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:text="Sign In"
+        android:textSize="20dp" />
+
+
+</RelativeLayout>
